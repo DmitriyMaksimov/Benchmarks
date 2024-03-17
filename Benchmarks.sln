@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks", "Benchmarks\Benchmarks.csproj", "{DB395126-F154-4CA4-8064-2E4D8064D847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{63FCCCB9-0B30-4405-B776-333D2F852B2D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD00091D-1A44-473F-9E41-C847437D28D2}"
+	ProjectSection(SolutionItems) = preProject
+		docs\StaticMethods.md = docs\StaticMethods.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB395126-F154-4CA4-8064-2E4D8064D847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB395126-F154-4CA4-8064-2E4D8064D847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB395126-F154-4CA4-8064-2E4D8064D847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB395126-F154-4CA4-8064-2E4D8064D847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
