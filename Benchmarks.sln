@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD00091D-1A44-473F-9E41-C847437D28D2}"
 	ProjectSection(SolutionItems) = preProject
 		docs\StaticMethods.md = docs\StaticMethods.md
+		docs\Logging.md = docs\Logging.md
 	EndProjectSection
 EndProject
 Global

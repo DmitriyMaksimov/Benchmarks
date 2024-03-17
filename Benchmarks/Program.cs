@@ -1,4 +1,4 @@
 ﻿using BenchmarkDotNet.Running;
-using Benchmarks;
 
-BenchmarkRunner.Run<StaticMethods>();
+BenchmarkRunner.Run<Benchmarks.StaticMethods>();
+BenchmarkRunner.Run<Benchmarks.Logging.Logging>();
