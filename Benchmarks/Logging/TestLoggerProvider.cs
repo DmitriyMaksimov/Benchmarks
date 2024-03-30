@@ -67,7 +67,7 @@ public sealed class TestLoggerProvider : ILoggerProvider
 
 public static class TestLoggerExtensions
 {
-    public static ILoggingBuilder AddTestLogger(this ILoggingBuilder builder)
+    private static ILoggingBuilder AddTestLogger(this ILoggingBuilder builder)
     {
         builder.AddConfiguration();
 
