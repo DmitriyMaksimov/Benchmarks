@@ -2,9 +2,7 @@
 #define ENABLE_CHECK
 
 using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Reports;
 using Microsoft.Extensions.Logging;
 
 namespace Benchmarks.Logging;
@@ -15,7 +13,7 @@ namespace Benchmarks.Logging;
 // [ShortRunJob]
 [GcServer]
 [GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByParams, BenchmarkLogicalGroupRule.ByCategory)]
-[Config(typeof(Config))]
+[Config(typeof(BenchmarkConfig))]
 public partial class Logging
 {
     private const string Message0 = "Test message";
@@ -31,17 +29,6 @@ public partial class Logging
 
     [Params(false, true)] public bool UseFormatter;
     [Params(LogLevel.Debug, LogLevel.Information)] public LogLevel MinLogLevel;
-
-    private class Config : ManualConfig
-    {
-        public Config()
-        {
-            WithOption(ConfigOptions.DontOverwriteResults, true);
-            WithOption(ConfigOptions.DisableLogFile, true);
-            WithUnionRule(ConfigUnionRule.Union);
-            WithSummaryStyle(SummaryStyle.Default.WithRatioStyle(RatioStyle.Percentage));
-        }
-    }
 
     [GlobalSetup]
     public void Setup()
