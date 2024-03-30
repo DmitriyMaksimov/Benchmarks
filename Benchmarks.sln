@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD00091D-1
 		docs\StaticMethods.md = docs\StaticMethods.md
 		docs\Logging.md = docs\Logging.md
 		docs\IntLongDoubleDecimal.md = docs\IntLongDoubleDecimal.md
+		docs\NullLogger.md = docs\NullLogger.md
 	EndProjectSection
 EndProject
 Global
