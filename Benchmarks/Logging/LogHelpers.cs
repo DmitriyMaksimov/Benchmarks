@@ -44,4 +44,13 @@ public static class LogHelpers
             logger.Log(LogLevel.Debug, messageTemplate, p0, p1, p2);
         }
     }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public static void Debug<T0>(this ILogger logger, [StructuredMessageTemplate] string messageTemplate, Func<T0> func)
+    {
+        if (logger.IsEnabled(LogLevel.Debug))
+        {
+            logger.Log(LogLevel.Debug, messageTemplate, func());
+        }
+    }
 }
