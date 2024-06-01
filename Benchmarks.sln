@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD00091D-1
 		docs\IntLongDoubleDecimal.md = docs\IntLongDoubleDecimal.md
 		docs\NullLogger.md = docs\NullLogger.md
 		docs\NullLoggerWithFunction.md = docs\NullLoggerWithFunction.md
+		docs\ForAnyExists.md = docs\ForAnyExists.md
 	EndProjectSection
 EndProject
 Global
