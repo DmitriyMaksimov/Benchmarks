@@ -39,6 +39,28 @@ Using collection specific method improves performance and allow to avoid unneces
 We have a clear winner here :)
 
 
+### Why `for` is slower than `Exists()`?
+The fact that `for` is not the fastest methods surprise me, so I start digging to implementation of `Exists()`.
+
+`for` using index to access elements. The indexer's implementation check boundaries
+```csharp
+    public T this[int index]
+    {
+      get
+      {
+        if ((uint) index >= (uint) this._size)
+          ThrowHelper.ThrowArgumentOutOfRange_IndexMustBeLessException();
+        return this._items[index];
+      }
+```
+
+So, `for` take the cost of checking boundaries for each element.
+
+On the other hand, `Exists()` have access to internal buffer (`_items`) - it does boundary check once (for the whole operation) and using the internal buffer directly. The more elements need to iterate - the bigger the saving (for example using "Never", `Exists()` faster than `for` by 22% for 10 elements, 30% for 1000).  
+
+**PS:** please notice a nice trick (reminds me my C++ past :wink:) - instead of performing 2 checks (negative index and out of boundary check), .NET devs cast to `uint` (so a negative value became a large value, for example `(uint)-1 == uint.MaxValue`) and use a single `if` to "Kill two birds with one stone".
+
+
 ## Benchmark results
 
 ```
