@@ -6,4 +6,5 @@
 // BenchmarkRunner.Run<Benchmarks.NullLogger>();
 // BenchmarkRunner.Run<Benchmarks.NullLoggerInsideLoop>();
 // BenchmarkRunner.Run<Benchmarks.NullLoggerWithFunction>();
-BenchmarkRunner.Run<Benchmarks.ForVsAnyVsExists>();
+// BenchmarkRunner.Run<Benchmarks.ForVsAnyVsExists>();
+BenchmarkRunner.Run<Benchmarks.CharVsString>();
