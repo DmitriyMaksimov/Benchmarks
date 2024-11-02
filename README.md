@@ -11,3 +11,4 @@ A solution with different benchmarks
 | Numeric                | `Parse`, `ToString` and `Sum` of numeric types             | [IntLongDoubleDecimal](docs/IntLongDoubleDecimal.md)     |
 | ForVsAnyVsExists       | `Any()`, `Exists()` and `for`                              | [ForAnyExists](docs/ForAnyExists.md)                     |
 | CharVsString           | Using char vs a single character string                    | [CharVsString](docs/CharVsString.md)                     |
+| OrderVsOrderBy         | Using `Order()` vs `OrderBy()`                             | [OrderVsOrderBy](docs/OrderVsOrderBy.md)                 |
