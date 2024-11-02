@@ -72,7 +72,7 @@ Server=False
 It's clear that methods with `char` times faster comparing with string with single char.
 For short strings (10 characters) the difference vary from 2 to 120 times, depends on method.
 Interesting that using `StringComparison.Ordinal` is 3 times faster.
-For larger strings the difference is that large, but absolute difference is impressive. 
+For larger strings the difference is not that large, but absolute difference is impressive. 
 
 ```
 | IndexOfChar           | 1000 |    51.6625 ns |  0.7777 ns | 0.7275 ns |         - |
