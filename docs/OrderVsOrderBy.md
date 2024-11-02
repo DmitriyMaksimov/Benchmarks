@@ -55,7 +55,7 @@ Job=.NET 8.0  Runtime=.NET 8.0  Server=False
 ```
 
 ## Analysis
-`Order` is significantly (2-4 times) faster then `OrderBy` and allocates 3-4 times less memory.  
+`Order` is significantly (2-4 times) faster than `OrderBy` and allocates 3-4 times less memory.  
 Interesting observation - sorting time depends on initial order of elements:
 - When elements are already in sorted order `Order/OrderBy` is the fastest
 - When elements are in reverse sorted order `Order/OrderBy` comes second (~1.44 times)
