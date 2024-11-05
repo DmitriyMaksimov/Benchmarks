@@ -22,7 +22,7 @@ public class OrderVsOrderBy
         Random
     }
 
-    [Params(10, 100, 1000, 10_000)] public int N;
+    [Params(10, 100, 1000, 10_000, 100_000, 1_000_000)] public int N;
     [ParamsAllValues] public InitOrder InitializationOrder;
 
     [GlobalSetup]
@@ -42,8 +42,8 @@ public class OrderVsOrderBy
     }
 
     [Benchmark]
-    public int OrderBy() => _list.OrderBy(x => x).ToList().Count;
+    public List<int> OrderBy() => _list.OrderBy(x => x).ToList();
 
     [Benchmark(Baseline = true)]
-    public int Order() => _list.Order().ToList().Count;
+    public List<int> Order() => _list.Order().ToList();
 }
