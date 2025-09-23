@@ -12,3 +12,4 @@ A solution with different benchmarks
 | ForVsAnyVsExists       | `Any()`, `Exists()` and `for`                              | [ForAnyExists](docs/ForAnyExists.md)                     |
 | CharVsString           | Using char vs a single character string                    | [CharVsString](docs/CharVsString.md)                     |
 | OrderVsOrderBy         | Using `Order()` vs `OrderBy()`                             | [OrderVsOrderBy](docs/OrderVsOrderBy.md)                 |
+| Hashing                | Compare performance of hashing algorithms                  | [Hashing](docs/Hashing.md)                               |

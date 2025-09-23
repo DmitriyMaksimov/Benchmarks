@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD00091D-1
 		docs\ForAnyExists.md = docs\ForAnyExists.md
 		docs\CharVsString.md = docs\CharVsString.md
 		docs\OrderVsOrderBy.md = docs\OrderVsOrderBy.md
+		docs\Hashing.md = docs\Hashing.md
 	EndProjectSection
 EndProject
 Global

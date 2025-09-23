@@ -8,4 +8,5 @@
 // BenchmarkRunner.Run<Benchmarks.NullLoggerWithFunction>();
 // BenchmarkRunner.Run<Benchmarks.ForVsAnyVsExists>();
 // BenchmarkRunner.Run<Benchmarks.CharVsString>();
-BenchmarkRunner.Run<Benchmarks.OrderVsOrderBy>();
+// BenchmarkRunner.Run<Benchmarks.OrderVsOrderBy>();
+BenchmarkRunner.Run<Benchmarks.Hashing>();
