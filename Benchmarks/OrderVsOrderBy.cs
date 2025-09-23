@@ -8,7 +8,7 @@ namespace Benchmarks;
 [MemoryDiagnoser]
 [GcServer]
 [GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByParams)]
-[SimpleJob(RuntimeMoniker.Net80)]
+[SimpleJob(RuntimeMoniker.Net90)]
 [HideColumns(Column.Error, Column.StdDev, Column.RatioSD)]
 [Config(typeof(BenchmarkConfig))]
 public class OrderVsOrderBy
