@@ -33,9 +33,21 @@ public class Hashing
     }
 
     [Benchmark]
+    public byte[] SHA3_256_Hash()
+    {
+        return SHA3_256.HashData(_data);
+    }
+
+    [Benchmark]
     public byte[] SHA384_Hash()
     {
         return SHA384.HashData(_data);
+    }
+
+    [Benchmark]
+    public byte[] SHA3_384_Hash()
+    {
+        return SHA3_384.HashData(_data);
     }
 
     [Benchmark]
@@ -45,6 +57,12 @@ public class Hashing
     }
 
     [Benchmark]
+    public byte[] SHA3_512_Hash()
+    {
+        return SHA3_512.HashData(_data);
+    }
+
+    [Benchmark(Baseline = true)]
     public byte[] XXHash3_Hash()
     {
         return XxHash3.Hash(_data);
@@ -62,7 +80,7 @@ public class Hashing
         return XxHash64.Hash(_data);
     }
 
-    [Benchmark(Baseline = true)]
+    [Benchmark]
     public byte[] XXHash128_Hash()
     {
         return XxHash128.Hash(_data);
